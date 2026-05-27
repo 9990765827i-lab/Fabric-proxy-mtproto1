@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "mtproto-proxy-mod",
+  "version": "${version}",
+  "name": "MTProto Proxy Mod",
+  "description": "Fabric mod adding MTProto proxy support with Obfuscated2 and AES-256-IGE encryption",
+  "authors": ["BetterDeepSeek"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/mtproto-proxy-mod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.github.mtprotoproxy.MTProtoProxyMod"
+    ]
+  },
+  "mixins": [
+    "mtproto-proxy-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "1.21.4",
+    "fabric-api": "*"
+  }
+}
